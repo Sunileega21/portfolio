@@ -4,10 +4,12 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false)
   // Function to handle scrolling and update the navbar background color
   function handleScroll() {
-    if (window.scrollY > 50) { // Adjust the scroll threshold as needed
-      setNavbar(true)
-    } else {
-      setNavbar(false)
+    if(process.browser){
+      if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+        setNavbar(true)
+      } else {
+        setNavbar(false)
+      }
     }
   }
 
@@ -17,7 +19,9 @@ function Navbar() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   }
-  window.addEventListener('scroll', handleScroll);
+  if(process.browser){
+    window.addEventListener('scroll', handleScroll); 
+  }
   return (
     <nav className={`${styles.sticky} ${navbar ? styles.scrolled : ''}`}>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-4 pb-4 '>
