@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './navbar.module.scss'
-function navbar() {
+function Navbar() {
   const [navbar, setNavbar] = useState(false)
   // Function to handle scrolling and update the navbar background color
   function handleScroll() {
@@ -36,4 +36,4 @@ function navbar() {
   )
 }
 
-export default navbar
+export default Navbar
