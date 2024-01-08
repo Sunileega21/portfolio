@@ -1,0 +1,84 @@
+.section {
+    position: relative;
+    top: -50px;
+}
+
+.sectionTitle {
+    color: #000000;
+    font-size: 1.75rem;
+}
+
+.align {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.leftBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.rightBox {
+    width: 60%;
+}
+
+.heading {
+    font-size: 18px;
+}
+
+.inputCs {
+    border-radius: 7px;
+    height: 45px;
+    padding: 12px 6px;
+    width: 100%;
+}
+
+.inputCsTextArea {
+    border-radius: 7px;
+    height: 170px;
+    padding: 12px 6px;
+    width: 100%;
+}
+
+.inputBox {
+    border-radius: 7px;
+    background: rgba(225, 225, 225, 0.42);
+    width: 100%;
+}
+
+.submitButton {
+    padding: 5px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    margin: 7px auto;
+}
+
+.earth {
+    background: url(https://climate.nasa.gov/system/resources/detail_files/41_StingofClimateChange_detail_768x432.jpg);
+    width: 432px;
+    /*img height is 432px*/
+    height: 432px;
+    /*img height*/
+    border-radius: 50%;
+    animation: earth 15s infinite linear forwards;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+@keyframes earth {
+    0% {
+        background-position: left top;
+    }
+
+    100% {
+        background-position: 768px top;
+        /*img width is 768px*/
+    }
+}

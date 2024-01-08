@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #1E0814;
+  font-family: 'Itim', sans-serif;;
+  background-color: #E5E5E5;
+}
+body,
+html {
+  box-sizing: border-box;
+}
+
+ul,ol{
+  list-style: unset !important;
+}
+.no-dots{
+  list-style: none;
+}
